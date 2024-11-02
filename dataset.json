@@ -1,0 +1,104 @@
+{
+    "nodes": [
+        {
+            "id": "1",
+            "label": "Person",
+            "properties": {
+                "name": "Alice",
+                "age": 30
+            }
+        },
+        {
+            "id": "2",
+            "label": "Person",
+            "properties": {
+                "name": "Bob",
+                "age": 25
+            }
+        },
+        {
+            "id": "3",
+            "label": "Company",
+            "properties": {
+                "name": "OpenAI",
+                "location": "San Francisco"
+            }
+        },
+        {
+            "id": "4",
+            "label": "Person",
+            "properties": {
+                "name": "Charlie"
+            }
+        },
+        {
+            "id": "5",
+            "label": "Post",
+            "properties": {
+                "content": "Hello World!",
+                "author": "Alice"
+            }
+        },
+        {
+            "id": "6",
+            "label": "Post",
+            "properties": {
+                "content": "Good Morning!",
+                "author": "Bob"
+            }
+        },
+        {
+            "id": "7",
+            "label": "Like",
+            "properties": {
+                "user": "Charlie",
+                "post": "Hello World!"
+            }
+        },
+        {
+            "id": "8",
+            "label": "Like",
+            "properties": {
+                "user": "Alice",
+                "post": "Good Morning!"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "start_node": "1",
+            "end_node": "2",
+            "label": "FRIENDS_WITH"
+        },
+        {
+            "start_node": "2",
+            "end_node": "3",
+            "label": "WORKS_AT"
+        },
+        {
+            "start_node": "3",
+            "end_node": "4",
+            "label": "COLLEAGUES_WITH"
+        },
+        {
+            "start_node": "1",
+            "end_node": "5",
+            "label": "POSTED"
+        },
+        {
+            "start_node": "2",
+            "end_node": "6",
+            "label": "POSTED"
+        },
+        {
+            "start_node": "4",
+            "end_node": "5",
+            "label": "LIKES"
+        },
+        {
+            "start_node": "1",
+            "end_node": "6",
+            "label": "LIKES"
+        }
+    ]
+}
